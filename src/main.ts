@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 /* eslint-disable no-console */
 import { items, Item } from './db/items.js';
 
@@ -32,5 +33,5 @@ getUniquesFromArr(allCatsArr);
 // getUniquesFromArr - reduce
 
 // 5. sukurti funkcija kuri grazina masyva su visais paveiksleliais.
-const allImageArr = getSinglePropertyArr(items, 'image');
+export const allImageArr = getSinglePropertyArr(items, 'image');
 console.log('allImageArr===', allImageArr);

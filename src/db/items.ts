@@ -6,7 +6,7 @@ export interface Item {
   title: string;
   price: number;
   description: string;
-  category: string;
+  category: "men's clothing" | 'jewelery' | 'electronics' | "women's clothing";
   image: string;
   rating: {
     rate: number;
